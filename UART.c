@@ -40,8 +40,8 @@ void UART_Init(void){
   SYSCTL_RCGC1_R |= SYSCTL_RCGC1_UART0; // activate UART0
   SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOA; // activate port A
   UART0_CTL_R &= ~UART_CTL_UARTEN;      // disable UART
-  UART0_IBRD_R = 21;                    // IBRD = int(80,000,000 / (16 * 230400)) = int(21.70138)
-  UART0_FBRD_R = 45;                    // FBRD = round(0.70138 * 64) = 45
+  UART0_IBRD_R = 86;                    // IBRD = int(80,000,000 / (16 * 57600)) = int(86.8055556)
+  UART0_FBRD_R = 52;                    // FBRD = round(0.8055556 * 64) = 45
                                         // 8 bit word length (no parity bits, one stop bit, FIFOs)
   UART0_LCRH_R = (UART_LCRH_WLEN_8|UART_LCRH_FEN);
   UART0_CTL_R |= UART_CTL_UARTEN;       // enable UART

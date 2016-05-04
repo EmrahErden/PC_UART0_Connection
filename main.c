@@ -3,7 +3,7 @@
 // MODIFIED LAB 11
 // Testing Jetson TK1 & TM4C Serial Port Connection
 // May 4, 2016
-// Modified Baud 115200 to 230400, more info at:
+// Modified Baud 115200 to 57600, more info at:
 // http://stackoverflow.com/questions/25230535/libserial-error-cannot-set-baud-rate-as-115200
 
 // this connection occurs in the USB debugging cable
